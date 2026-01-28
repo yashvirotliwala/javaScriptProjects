@@ -1,0 +1,30 @@
+<!-- SI = P × R × T / 100 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-2</title>
+</head>
+<body>
+    <h1 id="principal"></h1>
+    <h3 id="rate"></h3>
+    <h3 id="time"></h3>
+    <h3 id="si"></h3>
+
+    <script>
+        let principal = Number(prompt("Enter your Principal amount: "));
+        let rate= Number(prompt("Enter your intrest rate : "));
+        let time = Number(prompt("Enter your Principal : "));
+
+        let si = principal * rate * time / 100;
+
+        document.getElementById("principal").innerHTML = "principal amount : " + principal;
+        document.getElementById("rate").innerHTML = "intrest rate : " + rate;
+        document.getElementById("time").innerHTML = "time : " + time;
+        
+        document.getElementById("si").innerHTML = "simple intrest : " + si;
+    </script>
+</body>
+</html>

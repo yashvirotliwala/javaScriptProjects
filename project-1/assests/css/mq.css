@@ -1,0 +1,29 @@
+@media (max-width : 1400px){
+    .card{
+        max-width: 30vw !important;
+    }
+}
+
+@media (max-width : 1200px){
+    .card{
+        max-width: 33vw !important;
+    }
+}
+
+@media (max-width : 992px){
+    .card{
+        max-width: 60vw !important;
+    }
+}
+
+@media (max-width : 576px){
+    .card{
+        max-width: 70vw !important;
+    }
+}
+
+@media (max-width : 425px){
+    .card{
+        max-width: 80vw !important;
+    }
+}

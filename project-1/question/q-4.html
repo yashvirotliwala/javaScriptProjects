@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-4</title>
+</head>
+<body>
+    <h1 id="item1"></h1>
+    <h3 id="item2"></h3>
+    <h3 id="item3"></h3>
+    <h3 id="bill"></h3>
+
+    <script>
+        let item1 = Number(prompt("Enter your item1 price: "));
+        let item2= Number(prompt("Enter your item2 price : "));
+        let item3 = Number(prompt("Enter your item3 price : "));
+
+        let bill = item1 + item2 + item3;
+
+        document.getElementById("item1").innerHTML = "Item1 price : " + item1;
+        document.getElementById("item2").innerHTML = "Item2 price : " + item2;
+        document.getElementById("item3").innerHTML = "Item3 price : " + item3;
+        
+        document.getElementById("bill").innerHTML = "Total Bill : " + bill;
+    </script>
+</body>
+</html>

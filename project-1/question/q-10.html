@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Swap Two Numbers</h2>
+
+<h3 id="num1"></h3>
+<h3 id="num2"></h3>
+
+<script>
+    let a = Number(prompt("Enter first number (a): "));
+    let b = Number(prompt("Enter second number (b): "));
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    document.getElementById("num1").innerHTML = 
+        "Before Swap a = " + b + ", b = " + a;
+
+    document.getElementById("num2").innerHTML = 
+        "After Swap a = " + a + ", b = " + b;
+</script>
+
+</body>
+</html>

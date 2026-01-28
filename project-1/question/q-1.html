@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-1</title>
+</head>
+<body>
+    
+    <h1 id="salary"></h1>
+    <h3 id="hra"></h3>
+    <h3 id="da"></h3>
+    <h3 id="ta"></h3>
+    <h3 id="gross"></h3>
+
+
+    <script>
+        let baseSalary = Number(prompt("Enter the base salary : "));
+        let hra = Number(prompt("Enter the HRA : "));
+        let da = Number(prompt("Enter the DA : "));
+        let ta = Number(prompt("Enter the TA : "));
+
+        hraVal = hra/100 * baseSalary;
+        daVal = da/100 * baseSalary;
+        taVal = ta/100 * baseSalary;
+        let grossSalary = baseSalary+ hraVal + daVal + taVal;
+
+        document.getElementById("salary").innerHTML = "Your Base Salary : " + baseSalary;
+        document.getElementById("hra").innerHTML = "HRA : " + hra + "%";
+        document.getElementById("da").innerHTML = "DA : " + da + "%";
+        document.getElementById("ta").innerHTML = "TA : " + ta + "%";
+        document.getElementById("gross").innerHTML = "GROSS SALARY : " + grossSalary;
+    </script>
+</body>
+</html>

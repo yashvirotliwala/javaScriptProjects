@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculation of Age</h2>
+
+<h3 id="currentYear"></h3>
+<h3 id="birthYear"></h3>
+<h3 id="age"></h3>
+
+<script>
+    let currentYear = Number(prompt("Enter amount in INR: "));
+    let birthYear = Number(prompt("Enter amount in INR: "));
+
+    let age = currentYear - birthYear;  
+
+    document.getElementById("currentYear").innerHTML = "Current year " + currentYear;
+    document.getElementById("birthYear").innerHTML = "Birth year: " + birthYear;
+
+    document.getElementById("age").innerHTML = "AGE : " + age;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Currency Converter (INR ➝ USD)</h1>
+
+<h3 id="inr"></h3>
+<h3 id="usd"></h3>
+
+<script>
+    let inr = Number(prompt("Enter amount in INR: "));
+
+    let rate = 83;  
+    let usd = inr / rate;
+
+    document.getElementById("inr").innerHTML = "Amount in INR: " + inr;
+    document.getElementById("usd").innerHTML = "Amount in USD: " + usd.toFixed(2);
+</script>
+
+</body>
+</html>
