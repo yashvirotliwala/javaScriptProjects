@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicart Project</title>
+
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="./assests/fonts/montserrat-fonts/stylesheet.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header py-3 bg-white shadow-sm">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg p-0">
+
+            
+            <a class="navbar-brand p-0" href="#">
+                <img src="./assests/images/logo.png" alt="multikart" height="40">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                
+                <ul class="nav-menu navbar-nav mx-auto gap-lg-4 text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="#">
+                            Feature <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <span class="new-label">NEW</span>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Shop <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Product <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Pages <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Blog <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="header-icons d-flex align-items-center gap-3 justify-content-center mt-3 mt-lg-0">
+
+                    <i class="ri-heart-line fs-5"></i>
+                    <i class="ri-user-line fs-5"></i>
+                    <i class="ri-search-line fs-5"></i>
+                    <i class="ri-settings-3-line fs-5"></i>
+
+                    <div class="cart position-relative">
+                        <i class="ri-shopping-cart-line fs-5"></i>
+                        <span class="cart-count">2</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+    </header>
+
+   
+
+    <h2 class="sub-title m-4 pt-1">Exclusive Products</h2>
+    <h1 class="title fw-bold">Special Products</h1>
+
+    <section class="container">
+        <div class=" row g-2" id="prdcontainer">
+
+        </div>
+    </section>
+
+    <script src="./assests/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let products = [
+            {
+                id: 1,
+                name: "Denim Backpack",
+                originalPrice: 20.55,
+                colors: [
+                    { code: "#d0edff", name: "sky blue" },
+                    { code: "#f1e7e6", name: "cream" },
+                    { code: "#bfbfbf", name: "gray" }
+                ],
+                isNew: false,
+                imgUrl: "./assests/images/1.jpg"
+            },
+            {
+                id: 2,
+                name: "Black Belt",
+                originalPrice: 3.60,
+                colors: [
+                    { code: "#d0edff", name: "black" },
+                    { code: "#f1e7e6", name: "gray" },
+                    { code: "#bfbfbf", name: "cream" }
+                ],
+                isNew: true,
+                imgUrl: "./assests/images/2.jpg"
+            },
+            {
+                id: 3,
+                name: "Men's Snapback Cap",
+                originalPrice: 5.00,
+                colors: [
+                    { code: "#d0edff", name: "yellow" },
+                    { code: "#f1e7e6", name: "sky blue" },
+                    { code: "#bfbfbf", name: "gray" }
+                ],
+                isNew: false,
+                imgUrl: "./assests/images/3.jpg"
+            },
+            {
+                id: 4,
+                name: "Men's Sneaker Retro Shoes",
+                originalPrice: 100.50,
+                colors: [
+                    { code: "#d0edff", name: "sky blue" },
+                    { code: "#f1e7e6", name: "cream" },
+                    { code: "#bfbfbf", name: "gray" }
+                ],
+                isNew: true,
+                imgUrl: "./assests/images/4.jpg"
+            },
+            {
+                id: 5,
+                name: "3-Stripes Terry Hoodie",
+                originalPrice: 60.80,
+                colors: [
+                    { code: "#d0edff", name: "black" },
+                    { code: "#f1e7e6", name: "gray" },
+                    { code: "#bfbfbf ", name: "cream" }
+                ],
+                isNew: true,
+                imgUrl: "./assests/images/5.jpg"
+            },
+            {
+                id: 6,
+                name: "Foot Pass Socks",
+                originalPrice: 10.80,
+                colors: [
+                    { code: "#d0edff", name: "dark gray" },
+                    { code: "#f1e7e6", name: "gray" },
+                    { code: "#bfbfbf", name: "cream" }
+                ],
+                isNew: false,
+                imgUrl: "./assests/images/6.jpg"
+            },
+            {
+                id: 7,
+                name: "Eastpak Shoulder Bag",
+                originalPrice: 36.30,
+                colors: [
+                    { code: "#d0edff", name: "yellow multi" },
+                    { code: "#f1e7e6", name: "sky blue" },
+                    { code: "#bfbfbf", name: "cream" }
+                ],
+                isNew: true,
+                imgUrl: "./assests/images/7.jpg"
+            },
+            {
+                id: 8,
+                name: "Woven Track Jacket",
+                originalPrice: 99.90,
+                colors: [
+                    { code: "#d0edff", name: "multi color" },
+                    { code: "#f1e7e6", name: "sky blue" },
+                    { code: "#bfbfbf", name: "gray" }
+                ],
+                isNew: false,
+                imgUrl: "./assests/images/8.jpg"
+            },
+            {
+                id: 9,
+                name: "Slipped Men's Wallet",
+                originalPrice: 15.00,
+                colors: [
+                    { code: "#d0edff", name: "black" },
+                    { code: "#f1e7e6", name: "gray" },
+                    { code: "#bfbfbf", name: "cream" }
+                ],
+                isNew: true,
+                imgUrl: "./assests/images/9.jpg"
+            },
+            {
+                id: 10,
+                name: "Casual Printed Cotton Shorts",
+                originalPrice: 6.00,
+                colors: [
+                    { code: "#d0edff", name: "blue" },
+                    { code: "#f1e7e6", name: "cream" },
+                    { code: "#bfbfbf", name: "gray" }
+                ],
+                isNew: false,
+                imgUrl: "./assests/images/10.jpg"
+            }
+        ]
+
+        let container = document.getElementById("prdcontainer");
+
+        products.forEach((prd) => {
+            container.innerHTML +=
+                `<div class="w-20">
+                    <div class="card border-0">
+                        <div class="prd-img position-relative">
+                            ${prd.isNew ? `<span class="new-badge mt-2">NEW</span>` : ""}
+                            <img src="${prd.imgUrl}" class="card-img-top" alt="${prd.name}">
+                            <div class="hover-icons opacity-0 d-flex gap-3 ms-3">
+                                <i class="ri-shopping-cart-line"></i>
+                                <i class="ri-heart-line"></i> 
+                                <i class="ri-search-line"></i>
+                                <i class="ri-refresh-line"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="name d-flex justify-content-between align-items-center">
+                                <h6 class=" text-color fw-normal ">${prd.name}</h6>
+                                <span class="fw-bold fs-5">$${prd.originalPrice.toFixed(2)}</span>
+                            </div>
+                            <div>
+                                <ul class="colours d-flex gap-2 p-0 mt-1 mb-0">
+                                    ${prd.colors.map((color) => {
+                    return `<li style ="background-color: ${color.code}"></li>`
+                }).join("")}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+        })
+    </script>
+</body>
+
+</html>
