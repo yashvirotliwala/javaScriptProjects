@@ -1,0 +1,142 @@
+body{
+background:#d8c3a5;
+font-family:Arial;
+}
+
+.welcome{
+    color: #985a3c;
+}
+
+.sub-title{
+    color:#9a6d57;
+}
+
+.option{
+padding: 7px 0;   
+margin-bottom: 10px; 
+background:#e6cba8;
+cursor:pointer;
+}
+
+.option:hover{
+background:#edcfa6;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+}
+
+.start-btn{
+background:#e79067;
+border:none;
+padding: 5px 40px;
+border-radius: 10px;
+}
+
+.start-btn:hover{
+background:#df7f53;
+}
+
+.button{
+    background:#df7f53
+}
+
+#countdownCard{
+width:650px;
+background:#e7d3bb;
+padding:60px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+#countNumber{
+font-size:80px;
+font-weight:bold;
+color:#985a3c;
+}
+
+#restartBtn{
+padding:10px 20px;
+background:#409243;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+#restartBtn:hover{
+background:#45a049;
+}
+
+.correct{
+background:#57a959;
+}
+
+.result{
+    color: #9a6d57;
+}
+
+.score{
+    color: #9a6d57;
+    font-weight: 500;
+}
+
+.result-card{
+background:#f5e3c8;
+border-radius:15px;
+}
+
+.result-title{
+color:#985a3c;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.result-user{
+font-size:20px;
+color:#6b4c3b;
+margin-bottom:20px;
+}
+
+.score-box{
+background:#d8c3a5;
+border-radius:10px;
+padding:15px;
+margin:15px 0;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.score-number{
+font-size:40px;
+font-weight:bold;
+color:#9a6d57;
+display:block;
+}
+
+.score-text{
+font-size:20px;
+color:#9a6d57;
+}
+
+.result-message{
+font-size:20px;
+color:#9a6d57;
+margin-top:10px;
+}
+
+.restart-btn{
+background:#4CAF50;
+border:none;
+color:white;
+padding:10px 25px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.restart-btn:hover{
+background:#43a047;
+}
